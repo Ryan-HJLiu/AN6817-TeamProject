@@ -28,5 +28,9 @@
   "UiPath.UIAutomationNext.Activities.InjectJs.InjectJsExecutionWorld": "Isolated",
   "UiPath.UIAutomationNext.Activities.Logging.SearchLog": "False",
   "UiPath.UIAutomationNext.Activities.Logging.SearchPerformanceLog": "False",
-  "UiPath.UIAutomationNext.Activities.Logging.AuditLogLevel": "Trace"
+  "UiPath.UIAutomationNext.Activities.Logging.AuditLogLevel": "Trace",
+  "UiPath.UIAutomationNext.Activities.Generic.AskAtRuntime": "False",
+  "UiPath.UIAutomationNext.Activities.ClosePopup.PopupAppearTimeout": "30",
+  "UiPath.UIAutomationNext.Activities.SAPLogon.SAPLogonRetries": "5",
+  "UiPath.UIAutomationNext.Activities.SAPLogon.SAPLogonDelayBetweenRetries": "0.5"
 }

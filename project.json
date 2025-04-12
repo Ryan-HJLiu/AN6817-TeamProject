@@ -8,7 +8,7 @@
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.System.Activities": "[25.2.3]",
     "UiPath.Testing.Activities": "[23.10.1]",
-    "UiPath.UIAutomation.Activities": "[23.10.7]"
+    "UiPath.UIAutomation.Activities": "[24.10.12]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -44,6 +44,7 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
+    "modernBehavior": false,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
