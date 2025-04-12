@@ -2,7 +2,7 @@
   "name": "TeamProject",
   "projectId": "e0d97750-798b-44ef-b96d-bd50bc0ea0ef",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "Main_Ryan_Shopee.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.Mail.Activities": "[1.21.1]",
@@ -50,8 +50,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "ea16f24a-fadc-4024-a012-23078f4465f3",
+      "filePath": "Main_Ryan_Shopee.xaml",
+      "uniqueId": "1c2deaf7-331d-4d5e-8acc-c1a928033900",
       "input": [],
       "output": []
     }
