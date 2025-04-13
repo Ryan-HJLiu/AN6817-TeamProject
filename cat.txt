@@ -1,3 +1,5 @@
-shoes-for-men
+﻿shoes-for-men
 shoes-for-women
 shirts-for-men
+dress-for-women
+bag-for-women
