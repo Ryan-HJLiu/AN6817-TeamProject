@@ -4,7 +4,7 @@
   "description": "Blank Process",
   "main": "Main_Ryan_Shopee.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.22.3]",
+    "UiPath.Excel.Activities": "[3.0.1]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.System.Activities": "[25.2.3]",
     "UiPath.Testing.Activities": "[23.10.1]",
