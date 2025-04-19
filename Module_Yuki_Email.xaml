@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Module2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1300,2154" sap2010:WorkflowViewState.IdRef="Module2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Module2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1300,2278.6666666666665" sap2010:WorkflowViewState.IdRef="Module2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -105,13 +105,13 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Module2" sap:VirtualizedContainerService.HintSize="679.3333333333334,2089.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Module2" sap:VirtualizedContainerService.HintSize="679.3333333333334,2214" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="617.3333333333334,1978.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="617.3333333333334,2103.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dtShopeeData" />
         <Variable x:TypeArguments="x:String" Default="Shopee Analysis Report：\n\n" Name="mailBody" />
@@ -131,9 +131,11 @@
           <OutArgument x:TypeArguments="x:String">[allBody]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">
-            <Literal x:TypeArguments="x:String" Value="" />
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" xml:space="preserve">["Hi all,
+
+In Shopee website: 
+
+"]</InArgument>
         </Assign.Value>
       </Assign>
       <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtShopeeData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="555.3333333333334,734" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
@@ -214,6 +216,15 @@
           </ActivityAction>
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
+      <Assign sap:VirtualizedContainerService.HintSize="555.3333333333334,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_6">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[allBody]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String" xml:space="preserve">[allBody &amp; "Best regards,
+Team"]</InArgument>
+        </Assign.Value>
+      </Assign>
       <umab:OutlookApplicationCard Account="LIUH0101@e.ntu.edu.sg" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="555.3333333333334,720" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_2">
         <umab:OutlookApplicationCard.Body>
           <ActivityAction x:TypeArguments="um:IMailQuickHandle">
