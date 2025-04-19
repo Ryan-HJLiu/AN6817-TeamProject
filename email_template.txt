@@ -1,6 +1,6 @@
 ﻿Hi all,
 
-In shopee website: 
+In Shopee website: 
 the average price of {itemName} is {avgPrice}, 
 the average sold number of {itemName} is {avgSold}, 
 {itemName} mostly is sold from {mostFrom}.
