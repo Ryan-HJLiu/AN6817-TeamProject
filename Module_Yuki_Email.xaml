@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Module2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1300,2278.6666666666665" sap2010:WorkflowViewState.IdRef="Module2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Module2" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1300,3336.6666666666665" sap2010:WorkflowViewState.IdRef="Module2_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -108,13 +108,13 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Module2" sap:VirtualizedContainerService.HintSize="789.9999999999999,3001.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Module2" sap:VirtualizedContainerService.HintSize="679.3333333333334,3272" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="581.3333333333334,2978.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="617.3333333333334,3161.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dtShopeeData" />
         <Variable x:TypeArguments="x:String" Default="Shopee Analysis Report：\n\n" Name="mailBody" />
@@ -122,11 +122,7 @@
         <Variable x:TypeArguments="x:String" Name="template" />
         <Variable x:TypeArguments="x:String" Name="allBody" />
         <Variable x:TypeArguments="sd:DataTable" Name="dtLazadaData" />
-        <Variable x:TypeArguments="x:String" Name="allBody_lazada">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:String" xml:space="preserve"> in Lazada Website:</Literal>
-          </Variable.Default>
-        </Variable>
+        <Variable x:TypeArguments="x:String" Default=" in Lazada Website:" Name="allBody_lazada" />
         <Variable x:TypeArguments="x:String" Name="allBody_final" />
         <Variable x:TypeArguments="x:String" Name="shopeebody" />
         <Variable x:TypeArguments="x:String" Name="lazadabody" />
@@ -136,10 +132,10 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtShopeeData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="547.3333333333334,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="FinalResult" WorkbookPath="Data\Products_Shopee_Result.xlsx" />
-      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtLazadaData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="547.3333333333334,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="FinalResult" WorkbookPath="Data\Products_Lazada_Result.xlsx" />
-      <ui:ReadTextFile File="{x:Null}" Content="[template]" DisplayName="Read Text File" FileName="email_template.txt" sap:VirtualizedContainerService.HintSize="547.3333333333334,113.33333333333333" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
-      <Assign sap:VirtualizedContainerService.HintSize="547.3333333333334,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtShopeeData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="555.3333333333334,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="FinalResult" WorkbookPath="Data\Products_Shopee_Result.xlsx" />
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtLazadaData]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="555.3333333333334,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="FinalResult" WorkbookPath="Data\Products_Lazada_Result.xlsx" />
+      <ui:ReadTextFile File="{x:Null}" Content="[template]" DisplayName="Read Text File" FileName="email_template.txt" sap:VirtualizedContainerService.HintSize="555.3333333333334,81.33333333333333" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <Assign sap:VirtualizedContainerService.HintSize="555.3333333333334,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_4">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[allBody]</OutArgument>
         </Assign.To>
@@ -151,13 +147,13 @@ In Shopee website:
 "]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtShopeeData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="547.3333333333334,723.3333333333334" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtShopeeData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="555.3333333333334,734" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513.3333333333334,524.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="521.3333333333334,545.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="itemName" />
                 <Variable x:TypeArguments="x:String" Name="avgPriceStr" />
@@ -172,7 +168,7 @@ In Shopee website:
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479.3333333333333,240.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479.3333333333333,208.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -210,7 +206,7 @@ In Shopee website:
                   </scg:List>
                 </ui:MultipleAssign.AssignOperations>
               </ui:MultipleAssign>
-              <Assign sap:VirtualizedContainerService.HintSize="479.3333333333333,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign sap:VirtualizedContainerService.HintSize="479.3333333333333,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_3">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[unitBody]</OutArgument>
                 </Assign.To>
@@ -218,7 +214,7 @@ In Shopee website:
                   <InArgument x:TypeArguments="x:String">[template.Replace("{itemName}", itemName).Replace("{avgPrice}", avgPriceStr).Replace("{avgSold}", avgSoldStr).Replace("{mostFrom}", mostFrom)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="479.3333333333333,107.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign sap:VirtualizedContainerService.HintSize="479.3333333333333,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[allBody]</OutArgument>
                 </Assign.To>
@@ -230,21 +226,21 @@ In Shopee website:
           </ActivityAction>
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
-      <Assign sap:VirtualizedContainerService.HintSize="547.3333333333334,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_10">
+      <Assign sap:VirtualizedContainerService.HintSize="555.3333333333334,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_10">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[allBody]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[allBody &amp; vbNewLine &amp; "in Lazada Webside:" &amp; vbNewLine]</InArgument>
+          <InArgument x:TypeArguments="x:String">[allBody &amp; vbNewLine &amp; "In Lazada Webside:" &amp; vbNewLine]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtLazadaData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="547.3333333333334,723.3333333333334" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtLazadaData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="555.3333333333334,734" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="513.3333333333334,524.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="521.3333333333334,545.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_6">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="itemName" />
                 <Variable x:TypeArguments="x:String" Name="avgPriceStr" />
@@ -261,7 +257,7 @@ In Shopee website:
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479.3333333333333,240.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479.3333333333333,208.66666666666666" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -299,7 +295,7 @@ In Shopee website:
                   </scg:List>
                 </ui:MultipleAssign.AssignOperations>
               </ui:MultipleAssign>
-              <Assign sap:VirtualizedContainerService.HintSize="479.3333333333333,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_9">
+              <Assign sap:VirtualizedContainerService.HintSize="479.3333333333333,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_9">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[unitBody]</OutArgument>
                 </Assign.To>
@@ -307,7 +303,7 @@ In Shopee website:
                   <InArgument x:TypeArguments="x:String">[template.Replace("{itemName}", itemName).Replace("{avgPrice}", avgPriceStr).Replace("{avgSold}", avgSoldStr).Replace("{mostFrom}", mostFrom)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="479.3333333333333,107.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign sap:VirtualizedContainerService.HintSize="479.3333333333333,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_8">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[allBody]</OutArgument>
                 </Assign.To>
@@ -319,7 +315,7 @@ In Shopee website:
           </ActivityAction>
         </ui:ForEachRow.Body>
       </ui:ForEachRow>
-      <Assign sap:VirtualizedContainerService.HintSize="547.3333333333334,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign sap:VirtualizedContainerService.HintSize="555.3333333333334,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_6">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[allBody]</OutArgument>
         </Assign.To>
@@ -328,19 +324,19 @@ In Shopee website:
 Team"]</InArgument>
         </Assign.Value>
       </Assign>
-      <umab:OutlookApplicationCard Account="YZHANG322@e.ntu.edu.sg" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="547.3333333333334,746" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_2">
+      <umab:OutlookApplicationCard Account="LIUH0101@e.ntu.edu.sg" AccountMismatchBehavior="UseDefaultEmailAccount" DisplayName="Use Desktop Outlook App" sap:VirtualizedContainerService.HintSize="555.3333333333334,751.3333333333334" sap2010:WorkflowViewState.IdRef="OutlookApplicationCard_2">
         <umab:OutlookApplicationCard.Body>
           <ActivityAction x:TypeArguments="um:IMailQuickHandle">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Outlook" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="468,538" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,566" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Outlook]" Body="[allBody]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,478" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Item Report" To="YZHANG322@e.ntu.edu.sg" UseDocumentAsBody="False">
+              <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Outlook]" Body="[allBody]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,455.3333333333333" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Recommendation Page Report" To="LIUH0101@e.ntu.edu.sg" UseDocumentAsBody="False">
                 <umab:SendMailX.Files>
                   <scg:List x:TypeArguments="InArgument(x:String)" Capacity="2">
                     <InArgument x:TypeArguments="x:String">Data\Products_Shopee_filtered.xlsx</InArgument>

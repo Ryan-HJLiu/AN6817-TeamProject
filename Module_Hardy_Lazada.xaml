@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>674.4,2388</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1300,2270.6666666666665</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Module4_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -118,7 +118,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Module4" sap:VirtualizedContainerService.HintSize="684.8,2323.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Module4" sap:VirtualizedContainerService.HintSize="683.3333333333334,2206" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="category" />
     </Sequence.Variables>
@@ -127,21 +127,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="622.4,80.8" sap2010:WorkflowViewState.IdRef="Assign_4">
-      <Assign.To>
-        <OutArgument x:TypeArguments="s:String[]">[in_categories]</OutArgument>
-      </Assign.To>
-      <Assign.Value>
-        <InArgument x:TypeArguments="s:String[]">[{"shoes", "bags", "accessories"}]</InArgument>
-      </Assign.Value>
-    </Assign>
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="622.4,2090.4" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_categories]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="621.3333333333334,2095.3333333333335" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[in_categories]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="588.8,1954.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="587.3333333333334,1958" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="cat" />
             </Sequence.Variables>
@@ -150,8 +142,8 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="545.6,89.6" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[currentText.ToString]" />
-            <Assign sap:VirtualizedContainerService.HintSize="545.6,80.8" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="545.3333333333334,91.33333333333333" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[currentText.ToString]" />
+            <Assign sap:VirtualizedContainerService.HintSize="545.3333333333334,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[cat]</OutArgument>
               </Assign.To>
@@ -222,7 +214,7 @@
                           <uix:TargetAnchorable BrowserURL="https://www.lazada.sg/tag/shoes-for-men/" DesignTimeRectangle="459, -457, 1250, 5920" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='root' tag='DIV' /&gt;" Guid="886bc446-f604-4613-979e-8b780c524da1" InformativeScreenshot="0f75d55d51c4743cc2fe8fdcd11a9212.png" ScopeSelectorArgument="&lt;html app='msedge.exe' htmlwindowname='nameStorage:?wm_referrer=https%3A%2F%2Fwww.lazada.sg%2Ftag%2Fshoes-for-men%2F%3Fspm%3Da2o42.homepage.search.2.32ac46b5n9pQFs%26q%3Dshoes%2520for%2520men%26_keyori%3Dss%26clickTrackInfo%3DabId--378451__textId--8992023220079951449__score--0.0__pvid--9cf73554*' title='Shoes For Men - Best Price in Singapore - Apr 2025 | Lazada.sg' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                         </uix:NExtractData.Target>
                       </uix:NExtractData>
-                      <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[dtProducts_lazada]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[cat]" WorkbookPath="Data\Products_Lazada.xlsx" />
+                      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtProducts_lazada]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[cat]" WorkbookPath="Data\Products_Lazada.xlsx" />
                       <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="387.2,81.6" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Timeout="1" Version="V3" />
                       <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,89.6" sap2010:WorkflowViewState.IdRef="Delay_3" />
                     </Sequence>
