@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Module3" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="904,3976.6666666666665" sap2010:WorkflowViewState.IdRef="Module3_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Module3" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1300,4898" sap2010:WorkflowViewState.IdRef="Module3_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -101,13 +101,13 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Module3" sap:VirtualizedContainerService.HintSize="786,3912" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Module3" sap:VirtualizedContainerService.HintSize="786,4833.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="724,4702.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence sap:VirtualizedContainerService.HintSize="724,4722.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <Sequence.Variables>
         <Variable x:TypeArguments="scg:List(x:String)" Name="sheetList" />
         <Variable x:TypeArguments="scg:Dictionary(x:String, sd:DataTable)" Name="sheetDataDict" />
@@ -135,7 +135,7 @@
           </ActivityAction>
         </ui:ExcelApplicationScope.Body>
       </ui:ExcelApplicationScope>
-      <Assign sap:VirtualizedContainerService.HintSize="662,84" sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign sap:VirtualizedContainerService.HintSize="662,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_8">
         <Assign.To>
           <OutArgument x:TypeArguments="scg:Dictionary(x:String, sd:DataTable)">[sheetDataDict]</OutArgument>
         </Assign.To>
@@ -144,13 +144,13 @@
         </Assign.Value>
       </Assign>
       <ui:BuildDataTable DataTable="[dtFinalResult]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="662,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;itemName&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;avgPrice&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;avgSold&quot; msdata:Caption=&quot;&quot; type=&quot;xs:double&quot; /&gt;&#xA;                &lt;xs:element name=&quot;mostFrom&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each sheetItem" sap:VirtualizedContainerService.HintSize="662,3546" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[sheetList]">
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each sheetItem" sap:VirtualizedContainerService.HintSize="662,3564.6666666666665" sap2010:WorkflowViewState.IdRef="ForEach`1_5" Values="[sheetList]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:String">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:String" Name="sheetItem" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,3409.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,3427.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_13">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="sheetName" />
                 <Variable x:TypeArguments="sd:DataTable" Name="dataTableTemp" />
@@ -167,7 +167,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_sheet]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="586,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[sheetItem]" WorkbookPath="Data/Products_Lazada.xlsx" />
-              <ui:FilterDataTable DataTable="[dt_sheet]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="586,161.33333333333334" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_filtered_1]" SelectColumnsMode="Keep">
+              <ui:FilterDataTable DataTable="[dt_sheet]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="586,162.66666666666666" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_filtered_1]" SelectColumnsMode="Keep">
                 <ui:FilterDataTable.Filters>
                   <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                     <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
@@ -182,7 +182,7 @@
                   </scg:List>
                 </ui:FilterDataTable.SelectColumns>
               </ui:FilterDataTable>
-              <ui:FilterDataTable DataTable="[dt_filtered_1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="586,161.33333333333334" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_filtered_2]" SelectColumnsMode="Remove">
+              <ui:FilterDataTable DataTable="[dt_filtered_1]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="586,162.66666666666666" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_filtered_2]" SelectColumnsMode="Remove">
                 <ui:FilterDataTable.Filters>
                   <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                     <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="NOTEMPTY">
@@ -213,15 +213,15 @@
                   </scg:List>
                 </ui:FilterDataTable.SelectColumns>
               </ui:FilterDataTable>
-              <ui:AddDataColumn x:TypeArguments="x:Double" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="price_cleaned" DataTable="[dt_filtered_2]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="586,187.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
-              <ui:AddDataColumn x:TypeArguments="x:Int32" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="sold_cleaned" DataTable="[dt_filtered_2]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="586,187.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_filtered_2]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,1613.3333333333333" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+              <ui:AddDataColumn x:TypeArguments="x:Double" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="price_cleaned" DataTable="[dt_filtered_2]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="586,189.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
+              <ui:AddDataColumn x:TypeArguments="x:Int32" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="sold_cleaned" DataTable="[dt_filtered_2]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="586,189.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_filtered_2]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="586,1620" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,1426" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,1431.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_14">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:String" Name="cleanStr" />
                         <Variable x:TypeArguments="x:String" Name="anoStr" />
@@ -231,7 +231,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="510,84" sap2010:WorkflowViewState.IdRef="Assign_9">
+                      <Assign sap:VirtualizedContainerService.HintSize="510,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_9">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[cleanStr]</OutArgument>
                         </Assign.To>
@@ -239,15 +239,15 @@
                           <InArgument x:TypeArguments="x:String">[CurrentRow("Sold").ToString.ToLower().Replace("sold", "").Trim()]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <If Condition="[cleanStr.Contains(&quot;k&quot;)]" sap:VirtualizedContainerService.HintSize="510,525.3333333333334" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If Condition="[cleanStr.Contains(&quot;k&quot;)]" sap:VirtualizedContainerService.HintSize="510,527.3333333333334" sap2010:WorkflowViewState.IdRef="If_2">
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="476,171.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,172" sap2010:WorkflowViewState.IdRef="Sequence_16">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_10">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_10">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("sold_cleaned")]</OutArgument>
                               </Assign.To>
@@ -258,13 +258,13 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence sap:VirtualizedContainerService.HintSize="476,171.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,172" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_11">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_11">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("sold_cleaned")]</OutArgument>
                               </Assign.To>
@@ -275,7 +275,7 @@
                           </Sequence>
                         </If.Else>
                       </If>
-                      <Assign sap:VirtualizedContainerService.HintSize="510,84" sap2010:WorkflowViewState.IdRef="Assign_16">
+                      <Assign sap:VirtualizedContainerService.HintSize="510,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_16">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[anoStr]</OutArgument>
                         </Assign.To>
@@ -283,32 +283,32 @@
                           <InArgument x:TypeArguments="x:String">[CurrentRow("Price").ToString.Trim()]</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <If Condition="[anoStr.Contains(&quot;$&quot;)]" sap:VirtualizedContainerService.HintSize="510,525.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If Condition="[anoStr.Contains(&quot;RM&quot;)]" sap:VirtualizedContainerService.HintSize="510,527.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
                         <If.Then>
-                          <Sequence sap:VirtualizedContainerService.HintSize="476,171.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,172" sap2010:WorkflowViewState.IdRef="Sequence_19">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_17">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_17">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("price_cleaned")]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="x:Double">[CDbl(anoStr.Replace("$", ""))]</InArgument>
+                                <InArgument x:TypeArguments="x:Double">[CDbl(anoStr.Replace("RM", ""))]</InArgument>
                               </Assign.Value>
                             </Assign>
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence sap:VirtualizedContainerService.HintSize="476,171.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                          <Sequence sap:VirtualizedContainerService.HintSize="476,172" sap2010:WorkflowViewState.IdRef="Sequence_20">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,84" sap2010:WorkflowViewState.IdRef="Assign_18">
+                            <Assign sap:VirtualizedContainerService.HintSize="434,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_18">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow("price_cleaned")]</OutArgument>
                               </Assign.To>
@@ -323,7 +323,7 @@
                   </ActivityAction>
                 </ui:ForEachRow.Body>
               </ui:ForEachRow>
-              <Assign sap:VirtualizedContainerService.HintSize="586,84" sap2010:WorkflowViewState.IdRef="Assign_12">
+              <Assign sap:VirtualizedContainerService.HintSize="586,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_12">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[mostFrom]</OutArgument>
                 </Assign.To>
@@ -334,7 +334,7 @@
    First().Key]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="586,84" sap2010:WorkflowViewState.IdRef="Assign_13">
+              <Assign sap:VirtualizedContainerService.HintSize="586,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_13">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Double">[avgSold]</OutArgument>
                 </Assign.To>
@@ -342,7 +342,7 @@
                   <InArgument x:TypeArguments="x:Double">[dt_filtered_2.AsEnumerable().Average(Function(r) CDbl(r("sold_cleaned")))]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="586,84" sap2010:WorkflowViewState.IdRef="Assign_14">
+              <Assign sap:VirtualizedContainerService.HintSize="586,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_14">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Double">[avgPrice]</OutArgument>
                 </Assign.To>
@@ -350,8 +350,8 @@
                   <InArgument x:TypeArguments="x:Double">[dt_filtered_2.AsEnumerable().Average(Function(r) CDbl(r("price_cleaned")))]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {sheetItem, avgPrice, avgSold, mostFrom}]" DataTable="[dtFinalResult]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="586,187.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-              <Assign sap:VirtualizedContainerService.HintSize="586,84" sap2010:WorkflowViewState.IdRef="Assign_15">
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {sheetItem, avgPrice, avgSold, mostFrom}]" DataTable="[dtFinalResult]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="586,189.33333333333334" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+              <Assign sap:VirtualizedContainerService.HintSize="586,84.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_15">
                 <Assign.To>
                   <OutArgument x:TypeArguments="sd:DataTable">[sheetDataDict(sheetItem)]</OutArgument>
                 </Assign.To>
@@ -363,7 +363,7 @@
           </ActivityAction>
         </ui:ForEach.Body>
       </ui:ForEach>
-      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, sd:DataTable)" CurrentIndex="{x:Null}" DisplayName="For Each kvp" sap:VirtualizedContainerService.HintSize="662,340" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[sheetDataDict]">
+      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, sd:DataTable)" CurrentIndex="{x:Null}" DisplayName="For Each kvp" sap:VirtualizedContainerService.HintSize="662,340.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_6" Values="[sheetDataDict]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, sd:DataTable)">
             <ActivityAction.Argument>

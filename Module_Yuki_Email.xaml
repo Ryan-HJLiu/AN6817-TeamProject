@@ -142,7 +142,7 @@
         <Assign.Value>
           <InArgument x:TypeArguments="x:String" xml:space="preserve">["Hi all,
 
-In Shopee website: 
+In Shopee MY website: 
 
 "]</InArgument>
         </Assign.Value>
@@ -231,7 +231,7 @@ In Shopee website:
           <OutArgument x:TypeArguments="x:String">[allBody]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[allBody &amp; vbNewLine &amp; "In Lazada Webside:" &amp; vbNewLine]</InArgument>
+          <InArgument x:TypeArguments="x:String">[allBody &amp; vbNewLine &amp; "In Lazada MY Webside:" &amp; vbNewLine]</InArgument>
         </Assign.Value>
       </Assign>
       <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtLazadaData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="555.3333333333334,734" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
