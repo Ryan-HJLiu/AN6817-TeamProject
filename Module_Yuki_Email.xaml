@@ -192,7 +192,7 @@ In Shopee MY website:
                         <OutArgument x:TypeArguments="x:String">[avgSoldStr]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:String">[CDbl(CurrentRow("avgSold")).ToString("F2")]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[CDbl(CurrentRow("avgSold")).ToString("F0")]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
@@ -281,7 +281,7 @@ In Shopee MY website:
                         <OutArgument x:TypeArguments="x:String">[avgSoldStr]</OutArgument>
                       </ui:AssignOperation.To>
                       <ui:AssignOperation.Value>
-                        <InArgument x:TypeArguments="x:String">[CDbl(CurrentRow("avgSold")).ToString("F2")]</InArgument>
+                        <InArgument x:TypeArguments="x:String">[CDbl(CurrentRow("avgSold")).ToString("F0")]</InArgument>
                       </ui:AssignOperation.Value>
                     </ui:AssignOperation>
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
